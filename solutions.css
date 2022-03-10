@@ -129,13 +129,13 @@
   }
 
   75% {
-    right: (100% + 10px);
+    left: -10px;
     top: 100%;
   }
 
   90% {
-    right: (100% + 10px);
-    top: 100%;
+    left: -10px;
+    top: -10px;
   }
 
   100% {
@@ -145,13 +145,33 @@
 }
 
 .ex-13-button:hover .ex-13-bottom-white{
-  animation: muoviti-sotto 3s;
+  animation: muoviti-sotto13 3s;
 }
 
-@keyframes muoviti-sotto {
+@keyframes muoviti-sotto13 {
   25% {
-    right: calc(100% - 60px);
+    right: calc(100% - 40px);
     bottom: -10px;
+  }
+
+  50% {
+    right: calc(100% - 40px);
+    bottom: 50px;
+  }
+
+  75% {
+    right: -10px;
+    bottom: 50px;
+  }
+
+  90% {
+    bottom: -10px;
+    right: -10%;
+  }
+
+  100% {
+    bottom: -10px;
+    right: 20%;
   }
 }
 
