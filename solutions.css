@@ -1,0 +1,158 @@
+.ex-1-square:hover{
+  background-color: red;
+  transition: 3s;
+}
+
+.ex-2-square:active{
+  width: 100%;
+  transition: 5s;
+}
+
+.ex-3-square:hover{
+  border-radius: 100px;
+  transition: 3s;
+}
+
+.ex-4-square:hover{
+  background-color: #F5F5F5;
+  transition: 1s;
+}
+
+
+.ex-5-square:hover{
+  transform: scale(2);
+  transition: 1s;
+}
+
+.ex-5-square:active{
+  transform: scale(0.5);
+  transition: 1s;
+}
+
+
+.ex-6-img:hover{
+  filter: grayscale(100%);
+}
+
+.ex-7-img:hover{
+  filter: grayscale(100%) sepia(60%);
+  transition: 2s;
+}
+
+.ex-8-img:hover{
+  filter: grayscale(100%) sepia(50%);
+  border-radius: 10px;
+  transition: 2s;
+}
+
+.ex-9-img:hover{
+  filter: grayscale(100%) sepia(50%);
+  border-radius: 10px;
+  transform: scale(1.5);
+  transition: 2s;
+}
+
+
+
+.ex-10-icon{
+  animation: rotation1 1s infinite linear;
+}
+
+@keyframes rotation1 {
+  from {
+    transform: rotate(359deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+
+.ex-11-icon:hover{
+  animation: rotation2 4s infinite linear;
+}
+
+@keyframes rotation2 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  75% {
+    transform: rotate(300deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
+
+.ex-12-button:hover .ex-12-top-white{
+  animation: muoviti-sopra12 3s ;
+}
+
+@keyframes muoviti-sopra12 {
+  25% {
+    left: calc(100% - 60px);
+    top: -10px;
+  }
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+  animation: muoviti-sotto12 3s;
+}
+
+@keyframes muoviti-sotto12 {
+  25% {
+    right: calc(100% - 60px);
+    bottom: -10px;
+  }
+}
+
+
+
+
+.ex-13-button:hover .ex-13-top-white{
+  animation: muoviti-sopra13 3s ;
+}
+
+@keyframes muoviti-sopra13 {
+  25% {
+    left: 90%;
+    top: -10px;
+  }
+
+  50% {
+    left: 90%;
+    top: 100%;
+  }
+
+  75% {
+    right: (100% + 10px);
+    top: 100%;
+  }
+
+  90% {
+    right: (100% + 10px);
+    top: 100%;
+  }
+
+  100% {
+    top: -10px;
+    left: 10%;
+  }
+}
+
+.ex-13-button:hover .ex-13-bottom-white{
+  animation: muoviti-sotto 3s;
+}
+
+@keyframes muoviti-sotto {
+  25% {
+    right: calc(100% - 60px);
+    bottom: -10px;
+  }
+}
+
+
